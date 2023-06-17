@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>鸡打篮球</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 5em;
+        }
+        
+        .basketball {
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-40px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="basketball">🏀</div>
+    <div class="chicken">🐔</div>
+
+    <script>
+        // 等待页面加载完成后再执行代码
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var basketball = document.querySelector('.basketball');
+            var chicken = document.querySelector('.chicken');
+            
+            basketball.addEventListener('click', function() {
+                // 添加一个随机的旋转角度
+                var rotation = Math.floor(Math.random() * 360);
+                basketball.style.transform = 'rotate(' + rotation + 'deg)';
+            });
+
+            chicken.addEventListener('click', function() {
+                chicken.style.animation = 'bounce 1s infinite';
+            });
+        });
+    </script>
+</body>
+</html>
