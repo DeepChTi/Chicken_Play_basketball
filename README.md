@@ -9,7 +9,7 @@
 ---
 
 # 代码
-[点我开始(https://deepchti.github.io/Chicken_Play_basketball/)]
+https://deepchti.github.io/Chicken_Play_basketball/
 ## HTML
 
 ```html
